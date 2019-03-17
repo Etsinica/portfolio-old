@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"-->
+    <link rel="stylesheet" href="portfolio2tertiary.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,900i" rel="stylesheet">
+
+
+    <title>Ethan Sinica</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--
+    <script type="text/javascript" src="../libraries/p5.js"></script>
+    <script type="text/javascript" src="../libraries/p5.dom.js"></script>
+
+    <script type="text/javascript" src="sketch.js"></script>
+-->
+
+    <!--
+    <script type="text/javascript" src="Planet.js"></script>
+    <script type="text/javascript" src="SolarSystem.js"></script>
+    <script type="text/javascript" src="dom.js"></script>
+
+-->
+
+
+</head>
+
+<body bgcolor="#050606">
+    <div>
+        <div>
+            <div class="mainmenu"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33"><defs><style>.cls-1{fill:none;stroke:#d1d8e5;stroke-linecap:round;stroke-miterlimit:10;stroke-width:5px;}</style></defs><title>menuIcon</title><line class="cls-1" x1="2.5" y1="2.5" x2="30.5" y2="2.5"/><line class="cls-1" x1="2.5" y1="16.5" x2="30.5" y2="16.5"/><line class="cls-1" x1="2.5" y1="30.5" x2="30.5" y2="30.5"/></svg></div>
+            <ul class="submenu">
+                <li>
+                    <a href="https://etsinica.github.io/igme230/portfolio/about2">
+                        <p class="menutext">about me</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://etsinica.github.io/igme230/portfolio/contact2">
+                        <p class="menutext">contact</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="aside" id="left-aside">
+            <a href="https://etsinica.github.io/igme230/portfolio/contact2">
+                <h5>ets7885@rit.edu</h5>
+            </a>
+        </div>
+
+        <div class="aside" id="right-aside">
+            <a href="https://etsinica.github.io/igme230/portfolio/about2">
+                <h5>about me</h5>
+            </a>
+        </div>
+
+        <div id="wrapper">
+            <header>
+                <h1>Ethan Sinica</h1>
+                <h2>MAKER</h2>
+                <img class="icon" src="icon2Outline.png" alt="icon" style="width:200px;height:200px;">
+            </header>
+
+
+
+            <div class="container" id="first">
+                <ul style="list-style-type: none">
+                    <li class="contact"><a href="#">
+                Email ets7885@rit.edu
+            </a></li>
+                    <li class="contact"> <a href="https://twitter.com/ruba_dub_dub">
+                Twiter @ruba_dub_dub
+            </a></li>
+                    <li class="contact"> <a href="https://www.instagram.com/rubadubdubx/">
+                Instagram @rubadubdubx
+            </a></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <footer>
+            <p><a href="https://etsinica.github.io/igme230/portfolio/documentation.html">click here to see the process/documentation</a></p>
+        </footer>
+    </div>
+
+
+    <script>
+        $(".mainmenu").click(function() {
+            $(this).next().slideToggle("fast");
+        });
+    </script>
+
+
+    <!--
+    <div class="container">
+        <div class="title">
+            <h1>Ethan Sinica</h1>
+            <h2>MAKER</h2>
+            <img class="icon" src="icon2Outline.png" alt="icon" style="width:200px;height:200px;">
+        </div>
+    </div>
+
+    <div class="aside" id="left-aside">
+        <a href="https://etsinica.github.io/igme230/portfolio/contact">
+            <h5>ets7885@rit.edu</h5>
+        </a>
+    </div>
+
+    <div class="aside" id="right-aside">
+        <a href="https://etsinica.github.io/igme230/portfolio/about">
+            <h5>about me</h5>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="section">
+
+            <a href="https://etsinica.github.io/igme230/portfolio/mandala">
+            <img src="mandalaImg.png" alt="Mandala">
+            </a>
+            <a href="https://etsinica.github.io/igme230/portfolio/mandala">
+                <h3>Animated Mandala</h3>
+            </a>
+            <a href="https://etsinica.github.io/igme230/portfolio/mandala">
+                <h4>two-point-five Dimensional Animation</h4>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+
+            <a href="https://etsinica.github.io/igme230/portfolio/solar_system">
+            <img src="solarSystemPreview.png" alt="Interactive Solar System">
+            </a>
+
+            <a href="https://etsinica.github.io/igme230/portfolio/solar_system">
+                <h3>Interactive Solar System</h3>
+            </a>
+            <a href="https://etsinica.github.io/igme230/portfolio/solar_system">
+                <h4>javascript coding</h4>
+            </a>
+
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+
+            <a href="https://etsinica.github.io/igme230/portfolio/posters">
+            <img src="posterCompile.png" alt="Posters">
+            </a>
+
+            <a href="https://etsinica.github.io/igme230/portfolio/posters">
+                <h3>Poster Designs</h3>
+            </a>
+            <a href="https://etsinica.github.io/igme230/portfolio/posters">
+                <h4>illustrational exercises</h4>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+
+            <a href="https://etsinica.github.io/igme230/portfolio/3d">
+            <img src="keys.png" alt="keys">
+            </a>
+
+            <a href="https://etsinica.github.io/igme230/portfolio/3d">
+                <h3>3D Renders</h3>
+            </a>
+            <a href="https://etsinica.github.io/igme230/portfolio/3d">
+                <h4>modeling, texturing, animating</h4>
+            </a>
+
+        </div>
+    </div>
+-->
+
+
+
+
+    <!--
+    <div class="container">
+        <div class="section">
+
+            <a href="#">
+            <img src="dmvRender.png" alt="Mandala">
+            </a>
+
+            <a href="#">
+                <h3>DMV Form Redesign</h3>
+            </a>
+            <a href="#">
+                <h4>User Interface Design</h4>
+            </a>
+
+        </div>
+    </div>
+-->
+
+
+</body>
+
+
+</html>

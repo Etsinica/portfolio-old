@@ -1,0 +1,246 @@
+/* loads the font */
+
+@font-face {
+    font-family: avenir;
+    src: url(Avenir Next.ttc);
+}
+
+/* for javascript formatting (without this there were white margins) */
+
+html,
+body {
+    height: 100%;
+}
+
+
+body {
+    margin: 0;
+
+
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: avenir;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #d1d8e5;
+    font-weight: normal;
+    margin: 0;
+
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    color: #d1d8e5;
+    font-weight: normal;
+}
+
+h3 {
+    text-align: left;
+    font-size: 55px;
+    font-style: oblique;
+    font-weight: bold;
+    color: #d1d8e5;
+    margin-top: -25%;
+    margin-bottom: 0;
+}
+
+h4 {
+    text-align: left;
+    text-transform: uppercase;
+    color: #d1d8e5;
+    font-weight: 500;
+    margin: 0;
+}
+
+h5 {
+    text-align: center;
+    color: #7f8084;
+    font-weight: 500;
+}
+
+h6 {
+    text-align: center;
+    color: #7f8084;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 0px;
+    margin-right: -20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* horizontal center */
+    align-items: left;
+    /* vertical center */
+    height: 100%;
+    width: 100%;
+}
+
+.top {
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%
+}
+
+img {
+    max-width: 75%;
+    margin-left: 5%;
+}
+
+.icon,
+.iconAlt {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -20%;
+}
+
+.icon:hover {
+    content: url("icon2Color.png");
+}
+
+.galleryFeature {
+    max-width: 100%;
+    margin: 20%;
+    max-height: 700px;
+
+}
+
+.galleryFeature2 {
+    max-height: 100%;
+    margin: 20%;
+    ;
+}
+
+.banner {}
+
+
+.title {}
+
+.section {
+    margin-left: 14%;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+.extra {
+    margin-left: 40px;
+}
+
+.aside {
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+}
+
+#left-aside {
+    writing-mode: vertical-rl;
+}
+
+#right-aside {
+    writing-mode: vertical-lr;
+}
+
+ul {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 20px;
+    color: #d1d8e5;
+    font-weight: normal;
+    text-align: center;
+}
+
+li {
+    width: 10%;
+    margin-top: 20%;
+    color: #d1d8e5;
+    text-align: left;
+
+}
+
+p {
+    margin-top: 80px;
+    text-align: left;
+    font-size: 20px;
+    max-width: 500px;
+    color: #d1d8e5;
+    font-weight: normal;
+}
+
+/* removes underline */
+
+a {
+    text-decoration: none;
+}
+
+/* bolds the text on hover */
+
+a:hover {
+    font-weight: bold;
+}
+
+.video {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 1280px) {
+    iframe {
+        width: 896px;
+    }
+}
+
+@media only screen and (max-width: 896px) {
+    iframe {
+        width: 640px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    iframe {
+        width: 300px;
+    }
+    .aside {
+        display: none;
+    }
+    p {
+        font-size: 12px;
+    }
+    info {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .galleryFeature {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 700px;
+       
+    }
+    .galleryFeature2 {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 700px;
+       
+    }
+}

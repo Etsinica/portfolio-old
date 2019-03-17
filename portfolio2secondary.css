@@ -1,0 +1,320 @@
+/* loads the font */
+
+@font-face {
+    font-family: avenir;
+    src: url(Avenir Next.ttc);
+}
+
+/* for javascript formatting (without this there were white margins) */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* sets base font size for rem sizing */
+    font-size: 16px;
+    font-family: Avenir, Calibri, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+.aside {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    width: 5%;
+    z-index: 1;
+}
+
+.aside:hover {
+    letter-spacing: 3px;
+
+}
+
+#left-aside {
+    writing-mode: vertical-rl;
+}
+
+#right-aside {
+    writing-mode: vertical-lr;
+}
+
+#wrapper {
+    margin: auto;
+    display: grid;
+    width: 85vw;
+    min-height: 100vh;
+
+
+    grid-template-rows: 1fr 70vh 100vh;
+    /* defines relative height of three rows */
+    grid-template-columns: 2fr 1fr;
+    /* defines width of the three columns */
+}
+
+.title {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+
+}
+
+p {
+    text-align: left;
+    font-size: 20px;
+    max-width: 1000px;
+    color: #d1d8e5;
+    font-weight: normal;
+    padding-right: 5vw;
+}
+
+.info {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.extra {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.video {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.banner {
+    grid-column: 1/-1
+}
+
+.application {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: darkslategray;
+
+}
+
+#app-frame {
+}
+
+.container {
+    grid-column: 2/3;
+
+}
+
+#first {
+    grid-row: 2/3;
+}
+
+#second {
+    grid-row: 3/4;
+}
+
+#third {
+    grid-row: 4/5;
+}
+
+#fourth {
+    grid-row: 5/6;
+}
+
+
+.mainmenu {
+    position: fixed;
+    margin-left: 85vw;
+    margin-top: 10vw;
+    display: none;
+
+}
+
+.submenu {
+    list-style-type: none;
+
+    background-color: #d1d8e5;
+    display: none;
+    z-index: 2;
+    position: fixed;
+    margin-left: 70vw;
+    margin-top: 15vw;
+}
+
+.menutext {
+    text-align: right;
+    color: #7f8084;
+    font-weight: 500;
+}
+
+
+nav {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.gallery {
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+}
+
+
+footer {
+    grid-column: 1/-1;
+    grid-row: -1/-2;
+    color: #d1d8e5;
+}
+
+svg {
+    width: 5vw;
+    height: 5vw;
+}
+
+.galleryFeature {
+    margin: 10px;
+    max-height: 90vh;
+}
+
+header,
+footer,
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #d1d8e5;
+    font-weight: normal;
+    margin: 0;
+
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    color: #d1d8e5;
+    font-weight: normal;
+}
+
+h3 {
+    text-align: left;
+    font-size: 55px;
+    font-style: oblique;
+    font-weight: bold;
+    color: #d1d8e5;
+    margin: 0;
+}
+
+h4 {
+    text-align: left;
+    text-transform: uppercase;
+    color: #d1d8e5;
+    font-weight: 500;
+    margin: 0;
+}
+
+h5 {
+    text-align: center;
+    color: #7f8084;
+    font-weight: 500;
+}
+
+h6 {
+    text-align: center;
+    color: #7f8084;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 0px;
+    margin-right: -20px;
+}
+
+
+.icon,
+.iconAlt {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -20%;
+}
+
+.icon:hover {
+    content: url("icon2Color.png");
+}
+
+
+/* removes underline */
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1280px) {
+    iframe {
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 896px) {
+    iframe {
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    iframe {
+        width: 90vw;
+    }
+    .aside {
+        display: none;
+    }
+    p {
+        font-size: 12px;
+    }
+    info {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .galleryFeature {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 700px;
+
+    }
+    .galleryFeature2 {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 700px;
+
+    }
+    .mainmenu {
+        display: inherit;
+
+
+    }
+}

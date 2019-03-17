@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"-->
+    <link rel="stylesheet" href="portfolio2tertiary.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,900i" rel="stylesheet">
+
+
+    <title>Ethan Sinica</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--
+    <script type="text/javascript" src="../libraries/p5.js"></script>
+    <script type="text/javascript" src="../libraries/p5.dom.js"></script>
+
+    <script type="text/javascript" src="sketch.js"></script>
+-->
+
+    <!--
+    <script type="text/javascript" src="Planet.js"></script>
+    <script type="text/javascript" src="SolarSystem.js"></script>
+    <script type="text/javascript" src="dom.js"></script>
+
+-->
+
+
+</head>
+
+<body bgcolor="#050606">
+    <div>
+        <div>
+            <div class="mainmenu"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33"><defs><style>.cls-1{fill:none;stroke:#d1d8e5;stroke-linecap:round;stroke-miterlimit:10;stroke-width:5px;}</style></defs><title>menuIcon</title><line class="cls-1" x1="2.5" y1="2.5" x2="30.5" y2="2.5"/><line class="cls-1" x1="2.5" y1="16.5" x2="30.5" y2="16.5"/><line class="cls-1" x1="2.5" y1="30.5" x2="30.5" y2="30.5"/></svg></div>
+            <ul class="submenu">
+                <li>
+                    <a href="https://etsinica.github.io/igme230/portfolio/about2">
+                        <p class="menutext">about me</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://etsinica.github.io/igme230/portfolio/contact2">
+                        <p class="menutext">contact</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="aside" id="left-aside">
+            <a href="https://etsinica.github.io/igme230/portfolio/contact2">
+                <h5>ets7885@rit.edu</h5>
+            </a>
+        </div>
+
+        <div class="aside" id="right-aside">
+            <a href="https://etsinica.github.io/igme230/portfolio/about2">
+                <h5>about me</h5>
+            </a>
+        </div>
+
+        <div id="wrapper">
+            <header>
+                <h1>Ethan Sinica</h1>
+                <h2>MAKER</h2>
+                <img class="icon" src="icon2Outline.png" alt="icon" style="width:200px;height:200px;">
+            </header>
+
+
+
+            <div class="container" id="first">
+                <p>The main intended audience of my portfolio website is potential employers. They want to see why they should hire me over any other applicant for their open position and I certainly want to show them this. Showing someone why they should hire me involves more than just a display of my work. I should be able to portray personality and some aspect that makes my portfolio stick in their head (for good reasons).</p>
+            </div>
+
+            <div class="container">
+
+                <div class="galleryFeature2">
+                    <img src="wf1.png" alt="landing page wire frame" class="galleryFeature">
+
+                </div>
+            </div>
+            <div class="container">
+                <div class="galleryFeature2">
+                    <img src="wf2.png" alt="feature wire frame" class="galleryFeature">
+
+                </div>
+            </div>
+            <div class="container">
+                <div class="galleryFeature2">
+                    <img src="wf3.png" alt="description wire frame" class="galleryFeature">
+
+                </div>
+            </div>
+            <div class="container"><p>Initially, for V1 of my portfolio, I had some superfluous javascript based off of P5.JS code on their website. They coded the classic game of “Snake” and I adapted the code for drawing the snake into a mouse based drawing background application. It was useless I suppose. Now the website is just my own code. I suppose W3Schools helped a fair bit but most of that just about falls under common knowledge.<br><br>This project, on my second go of it, really helped me learn how to actually position content in web design. It was so gratifying seeing everything fit how it did, be responsive, and essentially, just sit there how I envisioned! The initial idea was to work in an AR.JS business card portion to the website but I am glad that I focused on the core website alone.<br><br>I’ll email you a copy of the business card some time over break when I make it; it’s a fun little thing that I want to share with people!</p></div>
+
+        </div>
+
+
+        <script>
+            $(".mainmenu").click(function() {
+                $(this).next().slideToggle("fast");
+            });
+
+        </script>
+
+
+        <!--
+    <div class="container">
+        <div class="title">
+            <h1>Ethan Sinica</h1>
+            <h2>MAKER</h2>
+            <img class="icon" src="icon2Outline.png" alt="icon" style="width:200px;height:200px;">
+        </div>
+    </div>
+
+    <div class="aside" id="left-aside">
+        <a href="https://etsinica.github.io/igme230/portfolio/contact">
+            <h5>ets7885@rit.edu</h5>
+        </a>
+    </div>
+
+    <div class="aside" id="right-aside">
+        <a href="https://etsinica.github.io/igme230/portfolio/about">
+            <h5>about me</h5>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="section">
+
+            <a href="https://etsinica.github.io/igme230/portfolio/mandala">
+            <img src="mandalaImg.png" alt="Mandala">
+            </a>
+            <a href="https://etsinica.github.io/igme230/portfolio/mandala">
+                <h3>Animated Mandala</h3>
+            </a>
+            <a href="https://etsinica.github.io/igme230/portfolio/mandala">
+                <h4>two-point-five Dimensional Animation</h4>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+
+            <a href="https://etsinica.github.io/igme230/portfolio/solar_system">
+            <img src="solarSystemPreview.png" alt="Interactive Solar System">
+            </a>
+
+            <a href="https://etsinica.github.io/igme230/portfolio/solar_system">
+                <h3>Interactive Solar System</h3>
+            </a>
+            <a href="https://etsinica.github.io/igme230/portfolio/solar_system">
+                <h4>javascript coding</h4>
+            </a>
+
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+
+            <a href="https://etsinica.github.io/igme230/portfolio/posters">
+            <img src="posterCompile.png" alt="Posters">
+            </a>
+
+            <a href="https://etsinica.github.io/igme230/portfolio/posters">
+                <h3>Poster Designs</h3>
+            </a>
+            <a href="https://etsinica.github.io/igme230/portfolio/posters">
+                <h4>illustrational exercises</h4>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+
+            <a href="https://etsinica.github.io/igme230/portfolio/3d">
+            <img src="keys.png" alt="keys">
+            </a>
+
+            <a href="https://etsinica.github.io/igme230/portfolio/3d">
+                <h3>3D Renders</h3>
+            </a>
+            <a href="https://etsinica.github.io/igme230/portfolio/3d">
+                <h4>modeling, texturing, animating</h4>
+            </a>
+
+        </div>
+    </div>
+-->
+
+
+
+
+        <!--
+    <div class="container">
+        <div class="section">
+
+            <a href="#">
+            <img src="dmvRender.png" alt="Mandala">
+            </a>
+
+            <a href="#">
+                <h3>DMV Form Redesign</h3>
+            </a>
+            <a href="#">
+                <h4>User Interface Design</h4>
+            </a>
+
+        </div>
+    </div>
+-->
+
+
+</body>
+
+
+</html>
